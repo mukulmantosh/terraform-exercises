@@ -9,3 +9,10 @@ resource "random_pet" "my-pet" {
   separator = "."
   length = "1"
 }
+
+# Variables
+
+resource "local_file" "data" {
+  filename = var.filename
+  content= var.content
+}
